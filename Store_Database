@@ -1,5 +1,6 @@
-** Create a table of the items sold in a store called printables, with columns containing id, name, price, print_time, and resin type with id being a primary key.**
+--Create a table of the items sold in a store called printables, with columns containing id, name, price, print_time, and resin type with id being a primary key.
 CREATE TABLE printables (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, print_time INTEGER, resin TEXT); 
+--insert data into the table for each of the items sold in the store
 INSERT INTO printables VALUES
 (1, "knight", 40, 8, "water_washable"),
 (2, "terminators", 35, 4, "high_detail"),
@@ -16,5 +17,7 @@ INSERT INTO printables VALUES
 (13, "captain", 10, 3, "high_detail"),
 (14, "chaplain", 15, 4, "high_detail"),
 (15, "librarian", 10, 3, "high_detail");
+--create a table of all the data ordered by the item prices.
 SELECT * FROM printables ORDER By price;
+--create a table of all the data but only display the item with the longest print time.
 SELECT MAX(print_time), * FROM printables;
