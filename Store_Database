@@ -1,4 +1,5 @@
-CREATE TABLE printables (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, print_time INTEGER, resin TEXT);
+** Create a table of the items sold in a store called printables, with columns containing id, name, price, print_time, and resin type with id being a primary key.**
+CREATE TABLE printables (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, print_time INTEGER, resin TEXT); 
 INSERT INTO printables VALUES
 (1, "knight", 40, 8, "water_washable"),
 (2, "terminators", 35, 4, "high_detail"),
