@@ -1,0 +1,19 @@
+CREATE TABLE printables (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, print_time INTEGER, resin TEXT);
+INSERT INTO printables VALUES
+(1, "knight", 40, 8, "water_washable"),
+(2, "terminators", 35, 4, "high_detail"),
+(3, "bikers", 10, 4, "water_washable"),
+(4, "leman_russ", 35, 8, "water_washable"),
+(5, "chimera", 25, 7, "water_washable"),
+(6, "shock_troops", 25, 3, "high_detail"),
+(7, "armigers", 40, 7, "water_washable"),
+(8, "kasarkin", 35, 5, "high_detail"),
+(9, "intercessors", 35, 6, "high_detail"),
+(10, "gladiator", 40, 8, "water_washable"),
+(11, "repulsor", 45, 9, "water_washable"),
+(12, "centurion", 15, 4, "high_detail"),
+(13, "captain", 10, 3, "high_detail"),
+(14, "chaplain", 15, 4, "high_detail"),
+(15, "librarian", 10, 3, "high_detail");
+SELECT * FROM printables ORDER By price;
+SELECT MAX(print_time), * FROM printables;
